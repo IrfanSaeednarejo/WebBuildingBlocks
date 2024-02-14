@@ -23,6 +23,7 @@ for(const keys in myobject){
     console.log(`${keys} value is ${myobject[keys]}`);
 }
 
+// printing array using foreach loop
 
 
 
