@@ -7,7 +7,7 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 // coding.forEach( (item) => {
 //     console.log(item);
 // } )
-
+//using function reference in foreach loop.
 // function printMe(item){
 //     console.log(item);
 // }
@@ -36,7 +36,7 @@ const myCoding = [
     },
 ]
 
+//printing array of objects values using foreach loop.
 myCoding.forEach( (item) => {
-    
-    console.log(item.languageName);
+    console.log(item.languageName,item.languageFileName);
 } )
