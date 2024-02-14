@@ -8,10 +8,18 @@ const obj1={
    isLoggedIn: false
 }
 
-console.log(obj1["email"])
-console.log(obj1["isLoggedIn"])
-obj1.email="irfan@maang.com"
-obj1["isLoggedIn"]=true
-console.log(obj1["email"])
-console.log(obj1["isLoggedIn"])
+// console.log(obj1["email"])
+// console.log(obj1["isLoggedIn"])
+// obj1.email="irfan@maang.com"
+// obj1["isLoggedIn"]=true
+// console.log(obj1["email"])
+// console.log(obj1["isLoggedIn"])
 
+obj1.greeting= function(){
+   console.log("Hello Js User")
+}
+obj1.greetingTwo= function(){
+   console.log(`Hello Js User, ${this.name}`)
+}
+console.log(obj1.greeting())
+console.log(obj1.greetingTwo())
