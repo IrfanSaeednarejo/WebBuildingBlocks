@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input in Forms</title>
+</head>
+<body>
+    <!--button input-->
+    <input class="styled" type="button" value="Add to favorites" />
+
+    
+    <!--Week input-->
+        <br />
+        <br />
+<label for="start">Start date:</label>
+<input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+
+
+<!--password input-->
+<br />
+<br />
+
+<div>
+    <label for="username">Username:</label><br />
+    <input type="text" id="username" name="username" />
+  </div>
+  <br />
+  <div>
+    <label for="pass">Password (8 characters minimum):</label><br />
+    <input type="password" id="pass" name="password" minlength="8" required />
+  </div>
+  <br />
+  <input type="submit" value="Sign in" />
+  <br /><br />
+
+
+  <!--radio input-->
+  <fieldset>
+    <legend>Select a maintenance drone:</legend>
+  
+    <div>
+      <input type="radio" id="huey" name="drone" value="huey" checked />
+      <label for="huey">Huey</label>
+    </div>
+  
+    <div>
+      <input type="radio" id="dewey" name="drone" value="dewey" />
+      <label for="dewey">Dewey</label>
+    </div>
+  
+    <div>
+      <input type="radio" id="louie" name="drone" value="louie" />
+      <label for="louie">Louie</label>
+    </div>
+  </fieldset>
+
+
+</body>
+</html>
