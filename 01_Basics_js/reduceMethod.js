@@ -25,3 +25,21 @@ function reducer(accumulator, currentValue, index) {
 array.reduce(reducer);
 
 //The callback would be invoked four times
+
+
+
+const people = [
+    {name: 'shawn', age: 21},
+    {name: 'john', age: 23},
+    {name: 'alex', age: 22},
+    {name: 'nayomi', age: 21},
+  ];
+  
+  const finalPeopleObject = people.reduce((peopleGroupedByAge, curValue) => {
+    const age = curValue.age;
+    if(!peopleGroupedByAge[age]) peopleGroupedByAge[age] = [];
+    peopleGroupedByAge[age].push(curValue)
+    return peopleGroupedByAge;
+  }, {});
+  
+  console.log(finalPeopleObject);
