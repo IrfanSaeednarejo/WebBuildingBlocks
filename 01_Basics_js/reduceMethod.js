@@ -43,3 +43,5 @@ const people = [
   }, {});
   
   console.log(finalPeopleObject);
+
+  // Group objects with Javascript Reduce Array
