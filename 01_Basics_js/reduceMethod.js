@@ -24,3 +24,4 @@ function reducer(accumulator, currentValue, index) {
 
 array.reduce(reducer);
 
+//The callback would be invoked four times
